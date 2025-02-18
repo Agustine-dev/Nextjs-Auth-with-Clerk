@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 div.cl-userbtn {
     border: none;
     margin: 10px;
+}
+
+.stop-3 {
+    animation: bounce 1s ease-in-out 3; /* 1s per iteration, 3 iterations */
 }

@@ -4,6 +4,8 @@ import {
   ClerkProvider
 } from '@clerk/nextjs'
 import "./globals.css";
+import 'animate.css'
+import 'remixicon/fonts/remixicon.css'
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
