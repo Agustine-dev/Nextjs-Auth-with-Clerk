@@ -9,8 +9,8 @@ import 'remixicon/fonts/remixicon.css'
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "XOLOTTERY",
-  description: "Lottery and casino app",
+  title: "E-commerce",
+  description: "An ecommerce site for the latest fashion trends",
 };
 
 export default function RootLayout({

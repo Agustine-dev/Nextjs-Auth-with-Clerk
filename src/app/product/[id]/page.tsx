@@ -14,6 +14,7 @@ export default async function ProductInfo(
     return (
         <div>
             <p>This is a sample product with id {params.id}</p>
+            <p>Coming soon!</p>
         </div>
     )
 }

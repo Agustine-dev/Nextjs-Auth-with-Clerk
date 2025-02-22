@@ -12,6 +12,8 @@
     "@clerk/nextjs": "^5.1.6",
     "animate.css": "^4.1.1",
     "antd": "^5.18.3",
+    "flowbite": "^3.1.2",
+    "flowbite-react": "^0.10.2",
     "mongoose": "^8.10.1",
     "next": "14.2.4",
     "react": "^18",

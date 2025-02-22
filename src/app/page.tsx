@@ -1,5 +1,6 @@
 "use client"
 import { SignIn, SignedIn, SignedOut } from "@clerk/nextjs";
+import { Carousel } from "flowbite-react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -46,38 +47,36 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-gray-100">
-        <div className="container mx-auto px-6 py-20">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-              <img className="w-full rounded-lg shadow-lg" src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Fashion Model" />
-            </div>
-            <div className="w-full md:w-1/2 px-4">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">New Arrivals</h3>
-              <p className="text-gray-600 mb-4">Explore our latest collection of chic and trendy fashion wear designed for the modern individual.</p>
-              <a href="#" className="inline-block px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Shop Now</a>
+      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mb-4">
+        <Carousel>
+          <div className="relative flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            <img className="w-full h-auto my-4" src="https://plus.unsplash.com/premium_photo-1699389167296-d6e9fc419789?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFydHklMjBmYXNoaW9ufGVufDB8fDB8fHww" />
+            <div className="absolute z-20 grid grid-cols-1 items-center gap-8">
+              <p className="text-white text-4xl sm:text-6xl md:text-5xl font-semibold">BIG FASHION</p>
+              <p className="text-white text-2xl text-center font-bold">70 - 80% off</p>
+              <button className="text-2xl bg-transparent text-white hover:bg-indigo-500 border-b border-gray-700 rounded-md px-4 py-2">Explore</button>
             </div>
           </div>
-        </div>
+          <div className="relative flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            {/* <img className="w-full h-auto my-4" src="https://plus.unsplash.com/premium_photo-1699389167296-d6e9fc419789?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFydHklMjBmYXNoaW9ufGVufDB8fDB8fHww" /> */}
+            <div className="absolute z-20 grid grid-cols-1 items-center gap-8">
+              <p className="text-white text-4xl sm:text-6xl md:text-5xl font-semibold">BIG FASHION</p>
+              <p className="text-white text-2xl text-center font-bold">70 - 80% off</p>
+              <button className="text-2xl bg-transparent text-white hover:bg-indigo-500 border-b border-gray-700 rounded-md px-4 py-2">Explore</button>
+            </div>
+          </div>
+          <div className="relative flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            {/* <img className="w-full h-auto my-4" src="https://plus.unsplash.com/premium_photo-1699389167296-d6e9fc419789?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFydHklMjBmYXNoaW9ufGVufDB8fDB8fHww" /> */}
+            <div className="absolute z-20 grid grid-cols-1 items-center gap-8">
+              <p className="text-white text-4xl sm:text-6xl md:text-5xl font-semibold">BIG FASHION</p>
+              <p className="text-white text-2xl text-center font-bold">70 - 80% off</p>
+              <button className="text-2xl bg-transparent text-white hover:bg-indigo-500 border-b border-gray-700 rounded-md px-4 py-2">Explore</button>
+            </div>
+          </div>
+        </Carousel>
       </div>
-      <div className="bg-gray-400 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-4 sm:py-12 md:py-20">
-        <div className="flex flex-col items-center text-center">
-          <i className="ri-truck-fill text-4xl mb-2"></i>
-          <h4 className="text-lg font-semibold mb-2">Free Shipping & Return</h4>
-          <p className="text-sm">Enjoy hassle-free shipping and easy returns on all orders.</p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <i className="ri-money-dollar-box-fill text-4xl mb-2"></i>
-          <h4 className="text-lg font-semibold mb-2">Money-Back Guarantee</h4>
-          <p className="text-sm">Not satisfied? We offer a full refund, no questions asked.</p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <i className="ri-24-hours-fill text-4xl mb-2"></i>
-          <h4 className="text-lg font-semibold mb-2">24/7 Support</h4>
-          <p className="text-sm">Our customer service is available around the clock to assist you.</p>
-        </div>
-      </div>
-      <div className="bg-gray-100 py-20">
+      
+      <div className="bg-gray-200 py-20">
         <div className="container mx-auto px-6 mb-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Featured Collections</h2>
           <div className="grid grid-cols-1 animate__animated animate__fadeInUp sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -136,6 +135,23 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="bg-gray-400 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-4 sm:py-12 md:py-20">
+        <div className="flex flex-col items-center text-center">
+          <i className="ri-truck-fill text-4xl mb-2"></i>
+          <h4 className="text-lg font-semibold mb-2">Free Shipping & Return</h4>
+          <p className="text-sm">Enjoy hassle-free shipping and easy returns on all orders.</p>
+        </div>
+        <div className="flex flex-col items-center text-center">
+          <i className="ri-money-dollar-box-fill text-4xl mb-2"></i>
+          <h4 className="text-lg font-semibold mb-2">Money-Back Guarantee</h4>
+          <p className="text-sm">Not satisfied? We offer a full refund, no questions asked.</p>
+        </div>
+        <div className="flex flex-col items-center text-center">
+          <i className="ri-24-hours-fill text-4xl mb-2"></i>
+          <h4 className="text-lg font-semibold mb-2">24/7 Support</h4>
+          <p className="text-sm">Our customer service is available around the clock to assist you.</p>
         </div>
       </div>
     </div>
